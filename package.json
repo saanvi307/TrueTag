@@ -1,0 +1,35 @@
+{
+  "name": "trutag-fssai-admin-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "db:check": "node --experimental-strip-types scripts/check-database.ts",
+    "db": "npm run db:check",
+    "auth:create-account": "node scripts/create-auth-account.mjs",
+    "auth:seed-admin": "node scripts/seed-initial-admin.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "mysql2": "^3.11.0",
+    "next": "^15.0.0",
+    "next-auth": "beta",
+    "qrcode": "^1.5.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^3.10.1",
+    "tesseract.js": "7.0.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^22.0.0",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19.0.0",
+    "jsqr": "^1.4.0",
+    "pngjs": "^7.0.0",
+    "typescript": "^5.0.0"
+  }
+}
